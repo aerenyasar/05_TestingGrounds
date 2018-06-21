@@ -34,6 +34,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 	TSubclassOf<class AProjectile> ProjectileClass;
 	class UAnimInstance* AnimInstance;
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	void OnFire();
 
 protected:
